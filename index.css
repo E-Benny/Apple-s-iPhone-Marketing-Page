@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.overlay {
+  opacity: 0.7;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+a, p, h1, h2 {
+  font-family: Georgia;
+}
+
+.container {
+  background: url("https://imgur.com/9u4JpRe.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  color: white;
+  padding: 0 80px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 991.98px) {
+  .container {
+    overflow: scroll;
+  }
+}
+.navbar, .content {
+  display: flex;
+  flex-direction: row;
+  padding-left: 200px;
+  padding-right: 200px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 991.98px) {
+  .navbar, .content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.navbar {
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 60px;
+}
+@media (max-width: 480px) {
+  .navbar {
+    width: 430px;
+    margin-left: -70px;
+  }
+}
+
+.navbar h1 {
+  font-size: 28px;
+  flex-grow: 1;
+}
+
+.navbar ul {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.navbar ul,
+.box-phone {
+  flex-grow: 1;
+}
+
+.box-phone {
+  text-align: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+li a {
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+li a.button-border:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn {
+  padding: 13px 15px;
+  border-radius: 50px;
+  color: white;
+  border: 0;
+  margin-right: 5px;
+  font-weight: bold;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.button-white {
+  background: white;
+  color: #000;
+}
+
+.button-standard {
+  background: blue;
+}
+
+.button-standard:hover,
+.button-border:hover {
+  color: blue;
+  background: white;
+}
+
+.button-border {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.box-intro h2 {
+  font-size: 40px;
+  margin-top: 25px;
+}
+
+.box-intro p {
+  margin: 15px 0 25px;
+  font-size: 14px;
+  line-height: 22px;
+  max-width: 500px;
+}
+
+.box-intro button {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.box-intro {
+  flex-grow: 2;
+}
+
+.menu {
+  padding-left: 35px;
+  position: relative;
+}
+
+.menu span,
+.menu span:before,
+.menu span:after {
+  background: white;
+  height: 2px;
+  width: 15px;
+  position: absolute;
+  left: 10px;
+}
+
+.menu:hover span,
+.menu:hover span:before,
+.menu:hover span:after {
+  background: #000;
+}
+
+.menu span:before {
+  content: "";
+  top: 6px;
+  left: 0;
+}
+
+.menu span:after {
+  content: "";
+  top: 12px;
+  left: 0;
+}
+
+img {
+  width: 500px;
+}
+@media (max-width: 480px) {
+  img {
+    width: 300px;
+    transform: translateX(-10%);
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    margin-left: -80px;
+  }
+}/*# sourceMappingURL=index.css.map */
